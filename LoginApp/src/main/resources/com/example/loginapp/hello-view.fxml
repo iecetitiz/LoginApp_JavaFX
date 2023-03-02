@@ -19,5 +19,15 @@
          </image>
       </ImageView>
       <Label fx:id="welcomeText" layoutX="413.0" layoutY="372.0" />
+      <ImageView fitHeight="18.0" fitWidth="22.0" layoutX="344.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="344.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/key.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

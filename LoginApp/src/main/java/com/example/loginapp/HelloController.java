@@ -35,14 +35,12 @@ public class HelloController {
 
     @FXML
     void clickLoginButton(ActionEvent event) {
-        if(user_name.getText().equals("username") && password.getText().equals("password1234")) {
+        if (user_name.getText().equals("username") && password.getText().equals("password1234")) {
             welcomeText.setText("you logged in successfully");
         } else {
             welcomeText.setText("username or password is incorrect");
         }
     }
-
-
 
 
     //login button will be disabled if username or password is empty, or they have space character
@@ -51,7 +49,6 @@ public class HelloController {
         String user_name_text = user_name.getText().trim();
         String password_text = password.getText().trim();
         boolean makeDisable = user_name_text.isEmpty() || password_text.isEmpty();
-       login_button.setDisable(makeDisable);
-
+        login_button.setDisable(makeDisable);
     }
 }
